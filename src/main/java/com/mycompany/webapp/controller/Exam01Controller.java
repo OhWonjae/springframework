@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.mycompany.webapp.dto.Board;
 
-
+//asdf
 @Controller
 public class Exam01Controller {
    private static final Logger logger = LoggerFactory.getLogger(Exam01Controller.class);
