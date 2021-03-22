@@ -3,10 +3,17 @@ package com.mycompany.webapp.dto;
 import java.util.Date;
 
 public class Board {
+
 	private int bno;
 	private String btitle;
 	private String bcontent;
 	private String bwriter;
+	private Date bdate;
+	private int bhitcount;
+	private String battachoname;
+	private String battachsname;
+	private String battachtype;
+
 	public int getBno() {
 		return bno;
 	}
@@ -61,10 +68,8 @@ public class Board {
 	public void setBattachtype(String battachtype) {
 		this.battachtype = battachtype;
 	}
-	private Date bdate;
-	private int bhitcount;
-	private String battachoname;
-	private String battachsname;
-	private String battachtype;
 
 }
+
+
+

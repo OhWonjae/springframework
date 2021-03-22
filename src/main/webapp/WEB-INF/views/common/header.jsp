@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark text-white font-weight-bold justify-content-between">
+  <a class="navbar-brand" href="./">
+    <img src="${pageContext.request.contextPath}/resources/images/logo.png" width="30" height="30" class="d-inline-block align-top">
+    Spring
+  </a>
+  <div>
+    <div>
+      <a class="btn btn-success btn-sm" href="#">로그인</a>
+		</div>
+  </div>
+</nav>
+=======
 <%@ page contentType="text/html; charset=UTF-8"%>
 	<head>
 		<title>Spring</title>
@@ -34,3 +50,4 @@
             <div class=" h-100 d-flex flex-column">
               <div class="flex-grow-1 overflow-auto pr-3" style="height:0px">
          
+>>>>>>> branch 'master' of https://github.com/OhWonjae/springframework.git
