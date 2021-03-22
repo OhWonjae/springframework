@@ -17,7 +17,6 @@
 		expression="org.springframework.streotype.Service"/>
 		<context:exclude-filter type="annotation" 
 		expression="org.springframework.Repository"/>
-	
 	</context:component-scan>
 	
 	

@@ -25,7 +25,7 @@
    </build>
    <dependencies>
    <!-- 스프링 모듈 라이브러리 -->
-      <dependency>
+         <dependency>
          <groupId>org.springframework</groupId>
          <artifactId>spring-webmvc</artifactId>
          <version>5.2.8.RELEASE</version>
@@ -51,6 +51,13 @@
          <scope>provided</scope>
       </dependency>
     <!-- JSP관련 라이브러리 -->
+    <dependency>
+          <groupId>javax.servlet.jsp</groupId>
+          <artifactId>javax.servlet.jsp-api</artifactId>
+          <version>2.3.3</version>
+          <scope>provided</scope>
+      </dependency>
+      
 	<dependency>
     <groupId>org.json</groupId>
     <artifactId>json</artifactId>
