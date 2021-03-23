@@ -7,6 +7,20 @@ public class Board {
 	public String btitle;
 	public String bcontent;
 	public String bwriter;
+	public Date bdate;
+	public int bhitcount;
+	public Date getBdate() {
+		return bdate;
+	}
+	public void setBdate(Date bdate) {
+		this.bdate = bdate;
+	}
+	public int getBhitcount() {
+		return bhitcount;
+	}
+	public void setBhitcount(int bhitcount) {
+		this.bhitcount = bhitcount;
+	}
 	public int getBno() {
 		return bno;
 	}
