@@ -1,5 +1,7 @@
 package com.mycompany.webapp.dto;
 
+import java.util.Date;
+
 public class Board {
 	public int bno;
 	public String btitle;
