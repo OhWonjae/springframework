@@ -20,4 +20,10 @@
 		<property name="configLocation" value="/WEB-INF/mybatis/mapper-config.xml"/>
 		<property name="mapperLocations" value="/WEB-INF/mybatis/mapper/*.xml"/>
 	</bean>
+	
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory"/>
+	</bean>
+	
+	
 </beans>
