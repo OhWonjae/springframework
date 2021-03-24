@@ -7,18 +7,16 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-
+	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
-
-	<!--@Controller, @RestControllerm @Compoent를 찾아서 등록,
-	 @Service, @Repository는 관리객체로 등록하지 않음(root-context에서 이미 했음)-->
-	<context:component-scan base-package="com.mycompany.webapp" >
-		<context:exclude-filter type="annotation" 
+	
+	<!-- @Controller, @RestController @Component 를 찾아서 관리 객체로 등록 
+		@Service, @Repository는 관리 객체로 등록하지 않음(root에서 이미 했음)-->
+	<context:component-scan base-package="com.mycompany.webapp">
+		<context:exclude-filter type="annotation"
 		expression="org.springframework.streotype.Service"/>
-		<context:exclude-filter type="annotation" 
-		expression="org.springframework.Repository"/>
+		<context:exclude-filter type="annotation"
+		expression="org.springframework.streotype.Repository"/>
 	</context:component-scan>
-	
-	
-	
+
 </beans:beans>

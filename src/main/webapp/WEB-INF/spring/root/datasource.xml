@@ -2,22 +2,34 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<!-- DB연결 설정 및 커넥션 풀 설정 -->
-	<bean id="dataSource"
-	 class="org.apache.commons.dbcp2.BasicDataSource"
-	 destroy-method="close">
-	 <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-	 <property name="url" value="jdbc:oracle:thin:@106.253.56.122:1521:orcl"/>
-	 <property name="username" value="user4"/>
-	 <property name="password" value="12345"/>
-	 <property name="initialSize" value="2"/>
-	 <property name="maxTotal" value="5"/>
-	 <property name="maxIdle" value="2"/>
+
+	<!-- DB 연결 설정 및 컨넥션 풀 설정 -->
+	<!-- bean은 object 객체이다. 근데 설정파일에서 bean을 만들면 관리객체가 된다. 이 설정파일이 root 밑에 있으므로 루트를 관리하는 관리객체가 됨 -->
+	<bean id="dataSource" 
+		  class="org.apache.commons.dbcp2.BasicDataSource"
+		  destroy-method="close">
+		  		<property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
+		  		<property name="url" value="jdbc:oracle:thin:@106.253.56.122:1521:orcl"/>
+		  		<property name="username" value="user4"/>
+		  		<property name="password" value="12345"/>
+		  		<property name="initialSize" value="3"/>
+		  		<property name="maxTotal" value="5"/>
+		  		<property name="maxIdle" value="2"/>
+		  		
 	</bean>
+	
 	<!-- MyBatis -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="/WEB-INF/mybatis/mapper-config.xml"/>
 		<property name="mapperLocations" value="/WEB-INF/mybatis/mapper/*.xml"/>
+
 	</bean>
+	
+	<bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory"/>
+	</bean>
+	
+	
+	
 </beans>

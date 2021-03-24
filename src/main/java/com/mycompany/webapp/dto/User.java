@@ -37,5 +37,4 @@ public class User {
 	public void setUjob(String ujob) {
 		this.ujob = ujob;
 	}
-
 }
