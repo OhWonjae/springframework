@@ -32,12 +32,18 @@
     <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam03/content">
   	요청 파라미터 받기
     </a>
+ </li>
+   <li class="nav-item">
+   <h6 class="text-white">DB연동</h6>
     <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam04/content">
-  	DB 연동
+  	게시판
     </a>
+    </li>
+     <li class="nav-item">
+     <h6 class="text-white">Ajax연동</h6>
      <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam05/content">
-  	AJAX 연동
+  	게시판
     </a>
-    
-  </li>
+    </li>
+ 
 </ul>
