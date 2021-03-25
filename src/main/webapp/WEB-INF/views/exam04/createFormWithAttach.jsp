@@ -4,23 +4,25 @@
 
 <div> <!--a tag : get방식  -->
 	<div class="alert alert-success">
-		게시물 수정
+		게시물 입력
 	</div>
 	
 
-	<form method="post" action="update">
-		<input type="hidden" name="bno" value="${board.bno}"/>
-	
+	<form method="post" action="createWithAttach" enctype="multipart/form-data">
 		<div class="form-group">
 			<label for="btitle">제목</label> 
-			<input type="text" class="form-control" id="btitle" name="btitle" value="${board.btitle}">
+			<input type="text" class="form-control" id="btitle" name="btitle">
 		</div>
 		<div class="form-group">
 			<label for="bcontent">내용</label> 
-			<input type="text" class="form-control" id="bcontent" name="bcontent" value="${board.bcontent}">
+			<input type="text" class="form-control" id="bcontent" name="bcontent">
 		</div>
-		<button type="submit" class="btn btn-primary">수정</button>
-		<a class="btn btn-primary" href="read?bno=${board.bno}">취소</a>
+		
+		<div class="form-group">
+			<label for="battach">첨부</label>
+		    <input type="file" class="form-control-file" id="battach" name="battach">
+		</div>
+		<button type="submit" class="btn btn-primary">저장</button>
 	</form>
 	
 	

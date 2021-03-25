@@ -7,13 +7,8 @@
 	</configSuffixes>
 	<enableImports><![CDATA[true]]></enableImports>
 	<configs>
-		<config>src/main/webapp/WEB-INF/spring/root/datasource.xml</config>
-		<config>src/main/webapp/WEB-INF/spring/root/root-component-scan.xml</config>
 	</configs>
 	<autoconfigs>
-		<config>src/main/webapp/WEB-INF/spring/dispatcher/view-resolver.xml</config>
-		<config>src/main/webapp/WEB-INF/spring/dispatcher/static-resources.xml</config>
-		<config>src/main/webapp/WEB-INF/spring/dispatcher/component-scan.xml</config>
 	</autoconfigs>
 	<configSets>
 	</configSets>
