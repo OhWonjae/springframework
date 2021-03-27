@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ include file="/WEB-INF/views/common/header.jsp"%>
@@ -34,6 +35,5 @@
 <%-- 	0. 연결상태: ${connStatus} <br/>
 	1. <a href="boards">게시물 목록</a> <br/> --%>
 </div>
-
 
 <%@ include file="/WEB-INF/views/common/footer.jsp"%>

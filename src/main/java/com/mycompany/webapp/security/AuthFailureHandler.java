@@ -21,3 +21,4 @@ public class AuthFailureHandler extends SimpleUrlAuthenticationFailureHandler {
 		super.onAuthenticationFailure(request, response, exception);
 	}
 }
+

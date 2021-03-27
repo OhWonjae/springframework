@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ include file="/WEB-INF/views/common/header.jsp"%>
@@ -81,4 +82,5 @@
 		<button type="submit" class="btn btn-primary">가입</button>
 	</form>
 </div>
+
 <%@ include file="/WEB-INF/views/common/footer.jsp"%>
