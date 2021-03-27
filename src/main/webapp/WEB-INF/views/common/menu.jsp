@@ -45,7 +45,7 @@
   	게시판
     </a>
     </li>
-    </li>
+
      <li class="nav-item">
      <h6 class="text-white">상태 유지</h6>
      <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam06/content">
@@ -53,7 +53,7 @@
     </a>
     </li>
     
-     </li>
+
      <li class="nav-item">
      <h6 class="text-white">회원 서비스</h6>
      <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam07/joinForm">
@@ -63,6 +63,26 @@
      <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam07/loginForm">
   		로그인
     </a>
+    </li>
+     
+     <li class="nav-item">
+     <h6 class="text-white">스프링 시큐리티</h6>
+     <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam08/user/boardlist">
+  		사용자가 사용하는 게시판
+    </a>
+    
+     <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam08/admin/boardlist">
+  		관리자가 사용하는 페이지
+    </a>
+    </li>
+    
+     <li class="nav-item">
+     <h6 class="text-white">유효성 검사</h6>
+     <a class="nav-link text-warning" href="<%=application.getContextPath()%>/exam09/joinForm">
+  		1차 검사(클라이언트: JS)
+    </a>
+
+    
     </li>
  
 </ul>

@@ -6,18 +6,9 @@
 	<div class="alert alert-primary">
 		로그인
 	</div>
-	<c:if test="${loginError!=null}">
-		<div class="alert alert-danger">
-			<c:if test="${loginError=='wrongUid'}">
-			<span>아이디가 존재하지 않습니다.</span>
-			</c:if>
-			<c:if test="${loginError=='wrongUpassword'}">
-			<span>비밀번호가 틀립니다.</span>
-			</c:if>
-	</div>
-	</c:if>
 	
-	<form method="post" action="login">
+	<form method="post" action="<%=application.getContextPath()%>/login">
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 		<div class="form-group">
 			<label for="uid">아이디</label> 
 			<input type="text" class="form-control" id="uid" name="uid">

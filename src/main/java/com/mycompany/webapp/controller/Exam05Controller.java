@@ -61,8 +61,7 @@ public class Exam05Controller {
 	      Pager pager = new Pager(10,5,totalRows,intPageNo);
 	      session.setAttribute("pager", pager);
 	      List<Board> list = boardsService.getBoardList(pager);
-	      logger.info("pageNo :L " + intPageNo);
-	      logger.info("list :L " + list);
+	    
 	      model.addAttribute("list", list);
 	      model.addAttribute("pager",pager);
 	      return "exam05/boardlist";
@@ -70,7 +69,7 @@ public class Exam05Controller {
 	
 	  @GetMapping("/read") 
 	  public String read(int bno, Model model) {
-		  logger.info("reads");
+		 
 		  boardsService.addHitcount(bno); // *** 조회수 1 증가. 
 		  Board board = boardsService.getBoard(bno); 
 		  model.addAttribute("board", board);
@@ -158,7 +157,7 @@ public class Exam05Controller {
 
 		board.setBwriter("user1");
 		boardsService.saveBoard(board);
-		logger.info("create");
+		
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.put("result", "success");
 		return jsonObject.toString();
